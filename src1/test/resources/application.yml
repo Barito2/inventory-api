@@ -1,0 +1,14 @@
+application.data-dir: /media/name/New Volume/Enigma/Enigmacamp/spring-boot/inventory-api/images
+server.port: 8080
+spring:
+    datasource:
+        url: jdbc:h2:mem:inventory_api
+        driver-class-name: org.h2.Driver
+        username: sa
+        password:
+    jpa.database-platform: org.hibernate.dialect.H2Dialect
+    messages.basename: i18n/messages
+    servlet:
+        multipart:
+            max-file-size: 300KB
+            max-request-size: 300KB
